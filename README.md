@@ -1,10 +1,41 @@
-# Getting Started with Create React App
+# Superchat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I was just trying out firebase and serverless functions.
+It uses `Firebase V9+` so the firebase syntax is updated.
 
-## Available Scripts
+## Scripts to Set up Repo & Serverless Backend Functions
 
-In the project directory, you can run:
+### Install packages
+
+```sh
+npm i
+```
+
+### Add env vars
+
+-   Create `.env` file from `example.env`
+-   Add the env variables for firebase
+
+### Installs Firebase CLI:
+
+```sh
+npm install -g firebase-tools
+```
+
+### Firebase Login
+
+```sh
+firebase login
+```
+
+### Deploy functions
+
+```sh
+cd functions
+firebase deploy --only functions
+```
+
+## Running
 
 ### `npm start`
 
@@ -13,6 +44,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+```sh
+npm start
+```
 
 ### `npm test`
 
